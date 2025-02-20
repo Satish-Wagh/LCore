@@ -267,7 +267,7 @@ void Localcredentialdialog::getTrustedDomainList(const QString& url)
 {
     qDebug()<<"getTrustedDomainList ";
     QProcess proc;
-    QStringList args;
+    QStringList args,abcd;
     args<<"-G"<<url;
     qDebug()<<QString(TRUSTTEDDOMAIN)<<args;
     proc.start(QString(TRUSTTEDDOMAIN),args);
